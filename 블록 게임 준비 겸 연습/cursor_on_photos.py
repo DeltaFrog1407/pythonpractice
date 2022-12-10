@@ -15,11 +15,9 @@ def game_main():
     if 24 <= mouse_x and mouse_x < 24 + 72 * 8 and 24 <= mouse_y and mouse_y < 24 + 72 * 10:
         cursor_x = int((mouse_x - 24) / 72)
         cursor_y = int((mouse_y - 24) / 72)
-        cvs.delete("CURSOR")
-        cvs.create_image(cursor_x*72 + 60, cursor_y*72 + 60, image=cursor, tag="CURSOR")
-        root.after(1, game_main)
-    else:
-        root.after(1, game_main)
+    cvs.delete("CURSOR")
+    cvs.create_image(cursor_x*72 + 60, cursor_y*72 + 60, image=cursor, tag="CURSOR")
+    root.after(1, game_main)
 
 neko = [
     [7, 7, 0, 0, 0, 0, 7, 7],
