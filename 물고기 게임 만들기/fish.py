@@ -14,8 +14,8 @@ FPS = 60
 
 class Fish():
     def __init__(self):
-        self.image = pygame.image.load(resource_path('assets/fish.png'))
-        self.sound = pygame.mixer.Sound(resource_path('assets/swim.wav'))
+        self.image = pygame.image.load(resource_path('물고기 게임 만들기/assets/fish.png'))
+        self.sound = pygame.mixer.Sound(resource_path('물고기 게임 만들기/assets/swim.wav'))
         self.rect = self.image.get_rect()
         self.width = self.image.get_rect().width
         self.height = self.image.get_rect().height
@@ -49,7 +49,7 @@ class Fish():
         
 class Pipe():
     def __init__(self):
-        self.lpipe = pygame.image.load(resource_path('assets/pipe01.png'))
+        self.lpipe = pygame.image.load(resource_path('물고기 게임 만들기/assets/pipe01.png'))
         self.lpipe_rect = self.lpipe.get_rect()
         self.lpipe_width = self.lpipe.get_rect().width
         self.lpipe_height = self.lpipe.get_rect().height
