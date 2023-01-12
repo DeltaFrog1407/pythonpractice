@@ -92,10 +92,10 @@ class Enemy():
         
 class Game():
     def __init__(self):
-        bounce_path = resource_path("핑퐁게임 만들기/assets/bounce.wav")
-        ping_path = resource_path("핑퐁게임 만들기/assets/ping.wav")
-        pong_path = resource_path("핑퐁게임 만들기/assets/pong.wav")
-        font_path = resource_path("핑퐁게임 만들기/assets/NanumGothicCoding-Bold.ttf")
+        bounce_path = resource_path("assets/bounce.wav")
+        ping_path = resource_path("assets/ping.wav")
+        pong_path = resource_path("assets/pong.wav")
+        font_path = resource_path("assets/NanumGothicCoding-Bold.ttf")
         bounce_sound = pygame.mixer.Sound(bounce_path)
         ping_sound = pygame.mixer.Sound(ping_path)
         pong_sound = pygame.mixer.Sound(pong_path)
